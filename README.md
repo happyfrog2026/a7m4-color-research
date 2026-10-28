@@ -1,6 +1,6 @@
 # A7M4 Color Research
 
-Color pipeline and creative looks research for the Sony A7 IV (ILCE-7M4).
+Color pipeline and creative looks research for the A7M4.
 
 This repository is the release home for project documentation and selected release artifacts.
 
