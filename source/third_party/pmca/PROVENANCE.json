@@ -1,0 +1,75 @@
+{
+  "schema": "a7m4-pmca-subset/1",
+  "source": "https://github.com/ma1co/Sony-PMCA-RE",
+  "license": "MIT",
+  "copyright": "Copyright (c) 2015 ma1co",
+  "embedded_source_credit": "pmca/usb/crypto.py credits https://github.com/ajalt/python-sha1",
+  "scope": "Ordinary USB authentication and generic driver subset only; no account, updater, firmware or app installation modules",
+  "files": [
+    {
+      "path": "LICENSE.txt",
+      "sha256": "a485f27d0b22eb7fd9b9419795695d0a1750ea32c961d11c1dd8ddade564dedf",
+      "bytes": 1072
+    },
+    {
+      "path": "pmca/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "pmca/util/__init__.py",
+      "sha256": "1bf318b75faf450011123ce430becc87aec8a7a161765afe38c498cdd20cbacf",
+      "bytes": 1485
+    },
+    {
+      "path": "pmca/usb/__init__.py",
+      "sha256": "db2fd3d0dfa2e6f315a14291be8951a5092875e8e5858183cabf2cec46a0fcda",
+      "bytes": 4101
+    },
+    {
+      "path": "pmca/usb/sony.py",
+      "sha256": "b3acf2450a8a7827228988d47d8a0da16e20ef341450027d21cb0579ca66ae51",
+      "bytes": 35959
+    },
+    {
+      "path": "pmca/usb/constants.py",
+      "sha256": "94bf081d3c1a51a60cf8fc214dce25a491413d4d786716460fde3fba832eb692",
+      "bytes": 12369
+    },
+    {
+      "path": "pmca/usb/crypto.py",
+      "sha256": "74660a42235f7efac6f47f38e2151049647bd0bc61ed6eb0763538815b2b6886",
+      "bytes": 1420
+    },
+    {
+      "path": "pmca/usb/driver/__init__.py",
+      "sha256": "dd7d53720a5a12bf87954e687f939fc71d9b1f30428faea4ba7eb217a0e788a4",
+      "bytes": 1325
+    },
+    {
+      "path": "pmca/usb/driver/generic/__init__.py",
+      "sha256": "24cda5b97dcd7e5ff4c6af0e0a8d66900688ef2ba09dc0fb53c42ab6b8c69123",
+      "bytes": 6767
+    },
+    {
+      "path": "pmca/usb/driver/generic/libusb.py",
+      "sha256": "1c80cfaa0692cf308bd086edc9a9bad3691804b50182993c1dd960c932daa1df",
+      "bytes": 3027
+    }
+  ],
+  "embedded_source_license": {
+    "file": "LICENSE.python-sha1.txt",
+    "source_url": "https://raw.githubusercontent.com/ajalt/python-sha1/master/LICENSE.txt",
+    "sha256": "4d1ff9370efb85b751e3fe1b5d376a512a5573d2b2dd75b151d03fdbefd89bcd"
+  },
+  "local_adaptations": [
+    {
+      "path": "pmca/usb/sony.py",
+      "baseline_sha256": "53ffb4d9d49cb5146623fda2b66ecb137681a6fc9ab0c98d23a51e75128af97e",
+      "adapted_sha256": "b3acf2450a8a7827228988d47d8a0da16e20ef341450027d21cb0579ca66ae51",
+      "change": "Replace only top-level Crypto SHA256 import and ret8 SHA256.new(data).digest() with stdlib hashlib.sha256(data).digest(). Authentication input selection, keys, ret2 sha1_faulty, packet sequence and result handling unchanged.",
+      "reason": "Avoid loading an unused third-party native SHA256 extension in the macOS service closure",
+      "validation": "Offline transcript and known-answer checks; no physical device acceptance claimed"
+    }
+  ]
+}

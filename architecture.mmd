@@ -1,0 +1,26 @@
+flowchart TD
+    GUI["GUI：编辑与用户确认"] --> Driver["共享 CLI driver"]
+    CLI["CLI：显式参数"] --> Driver
+    Driver --> Prepare["本机素材准备、备份校验与计划"]
+    Prepare --> Check["机身、版本、当前状态及必要依赖检查"]
+    Check --> Action{"本次操作"}
+    Action -->|安装| Install["应用所选滤镜、声音与名称图标"]
+    Install --> InstallVerify["核对结果并安全退出"]
+    InstallVerify --> InstallUser["用户冷启动与功能检查"]
+    InstallUser --> InstallDone["安装完成"]
+    Action -->|从备份恢复| Compare["原始备份与当前状态生成恢复计划"]
+    Compare --> ST["按需保存 ST 保护状态"]
+    ST --> FirstBoot["安全检查点；用户冷启动并重新连接"]
+    FirstBoot --> STProof["新启动后核对实际 ST 状态"]
+    STProof --> Restore["恢复已支持功能配置"]
+    Restore --> Ready{"后续阶段的运行条件允许？"}
+    Ready -->|需要用户操作| Checkpoint["保存安全检查点并提示"]
+    Checkpoint --> Resume["用户完成操作；重新读出并续接"]
+    Resume --> Ready
+    Ready -->|允许| Finish["名称图标等收尾及完整结果核对"]
+    Finish --> FinalBoot["按提示重启；启动后机读核验"]
+    FinalBoot --> User["用户确认名称图标、声音、拍摄、回放"]
+    User --> Restored["恢复完成"]
+    Driver -.-> Records["本机：原件、计划、检查点与诊断"]
+    classDef human fill:#fff0d6,stroke:#b77900;
+    class InstallUser,FirstBoot,Resume,FinalBoot,User human;

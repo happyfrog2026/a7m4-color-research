@@ -1,0 +1,1309 @@
+{
+  "schema": "a7m4-public-research-package/1",
+  "source_version": "0.5.1-alpha.62",
+  "project_license": "PolyForm-Noncommercial-1.0.0",
+  "existing_source_licenses_preserved": true,
+  "camera_io_performed_for_publication": false,
+  "files": [
+    {
+      "path": "ARCHITECTURE.md",
+      "bytes": 3565,
+      "sha256": "060b6f1674b1d25367503bb06c3ac6a50bc3ae5a3dec6d28d4ed87abff22bdf1"
+    },
+    {
+      "path": "HELPER-GUIDE.md",
+      "bytes": 10049,
+      "sha256": "507ee449139df6564c4be794956cdf7ff764852da3f1bf76d4de073e71949aa8"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 4563,
+      "sha256": "c0ea4a896d2c8c394b29f9427589996db826cd501c512279ff0ed3ef48fabbe5"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2533,
+      "sha256": "747c290e70cdd37d3db51131b71d8da8b3d74a7812c491c5faae8cbf51f44427"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 1930,
+      "sha256": "e616feef93ed0e604de72ec9d208b16053916be5e3271987c667d884d924e754"
+    },
+    {
+      "path": "UPSTREAM_ATTRIBUTION.md",
+      "bytes": 2245,
+      "sha256": "f5c23a1d74938c1b9e3662efb33f80f9cc3d8f86f83d94cae24872785a6f89af"
+    },
+    {
+      "path": "VERIFICATION.md",
+      "bytes": 961,
+      "sha256": "76183bac355225a8f74e91c5d32b75804562e2b5713ba8905e28283d0b177d2e"
+    },
+    {
+      "path": "architecture.mmd",
+      "bytes": 1569,
+      "sha256": "6ec7996049d530d9c4c0eaa1075334a6843f96e3d673873dc10742be9ad45543"
+    },
+    {
+      "path": "cli/a7m4-toolbox",
+      "bytes": 1382,
+      "sha256": "fc0e7bce061ca338406907292314d27a24c17e3bc0576f5d43be45f319c746ff"
+    },
+    {
+      "path": "cli/check-backup",
+      "bytes": 431,
+      "sha256": "dea2051dd7dd673b7a82c7cb19ffaa3b9a93ca53dcb3338287fb86953500b875"
+    },
+    {
+      "path": "cli/check-local",
+      "bytes": 683,
+      "sha256": "07450e1ce5a0fe6e97574b75d26b7acea7bd2bd656875d5a9beb6a5ab1eeb523"
+    },
+    {
+      "path": "cli/export-logs",
+      "bytes": 453,
+      "sha256": "be88c590f563f973bc1c80ab7864cb425325786e0dd5d393042bb234b61f39c5"
+    },
+    {
+      "path": "examples/fl23-silent.draft.json",
+      "bytes": 131,
+      "sha256": "0edbf297c7199655ae89941680b5a90974e9918e1300d93f699b5c3ae80d1b1b"
+    },
+    {
+      "path": "examples/m9-recock.draft.json",
+      "bytes": 234,
+      "sha256": "47a75356723fd47373b24eda524e4d16ef9efd8e3d3fb9d4a9a95d705f035d8f"
+    },
+    {
+      "path": "source/LICENSE",
+      "bytes": 1392,
+      "sha256": "a5aafd5c1a36bd33e8098371f499eb5a3f2bd935abf933a545c2519915f94a96"
+    },
+    {
+      "path": "source/THIRD_PARTY_NOTICES.md",
+      "bytes": 9415,
+      "sha256": "65e6089e147546e88a78a6cda56284cd67f156bdfebe124fbf4039e4400d81ec"
+    },
+    {
+      "path": "source/a7m4/__init__.py",
+      "bytes": 113,
+      "sha256": "078f56ee3e1f0ffefad64c26b43ad9de073d0b32395ff0f656b7b0e61700c9b8"
+    },
+    {
+      "path": "source/a7m4/research/__init__.py",
+      "bytes": 166,
+      "sha256": "d0c10b47d95678e8c3a85512d9ecd61df7f52f41bac103d6c576cd9cb05237ef"
+    },
+    {
+      "path": "source/a7m4/research/__main__.py",
+      "bytes": 13016,
+      "sha256": "6dcf2c7199f6b26953497f0075151285131a779a2b10196fe9d997aa3a766dc1"
+    },
+    {
+      "path": "source/a7m4/research/audio.py",
+      "bytes": 14167,
+      "sha256": "f396768e1e54b2b8b1aa62ef5927d79c7d886319f85955c84df1c72c187e832d"
+    },
+    {
+      "path": "source/a7m4/research/backup.py",
+      "bytes": 30972,
+      "sha256": "698410745ddd6d82dd2af4512d2035641169c3d1289f8cf3848cc97f873e4efa"
+    },
+    {
+      "path": "source/a7m4/research/data/C2-LICENSE.txt",
+      "bytes": 1234,
+      "sha256": "c592870a8504689cbe03449c2ae582ba6517716c9e0cd2f880cea50c187d16e9"
+    },
+    {
+      "path": "source/a7m4/research/data/pin-sound-dynamic.c",
+      "bytes": 25913,
+      "sha256": "4461e92ad1b683bc9e623e4e12892a177c6c83b5430e46de7ee06ef15ee07355"
+    },
+    {
+      "path": "source/a7m4/research/doctor.py",
+      "bytes": 3918,
+      "sha256": "750560eec72cbfa2688d2d232d4d789a7d23eedfdb84f401429c3a53a6ae5846"
+    },
+    {
+      "path": "source/a7m4/research/icons.py",
+      "bytes": 24288,
+      "sha256": "beaa2a994bdc0aaae921534caf250911a8739f5a6a83eaa93fc7430cbde5bc85"
+    },
+    {
+      "path": "source/a7m4/research/lut.py",
+      "bytes": 27871,
+      "sha256": "85e3abbd8b636e5fa24fce493150f86349040bf527a33811235886b68fcef876"
+    },
+    {
+      "path": "source/a7m4/research/native_audio_codec.py",
+      "bytes": 4044,
+      "sha256": "5176f83eca355f5fd3623f473290cc4b010b03a4df7d2f9badef634cb2055edf"
+    },
+    {
+      "path": "source/a7m4/research/native_icons.py",
+      "bytes": 31673,
+      "sha256": "fcb65c2929e2731026f9b70a3c62e38ce71d657bc39c40f4f981309a3a0a0032"
+    },
+    {
+      "path": "source/a7m4/research/offline.py",
+      "bytes": 21530,
+      "sha256": "d1e594d0b030ac9e9e05b7d463df4c4d8732afb3d18a314301d97dac47abb154"
+    },
+    {
+      "path": "source/a7m4/research/pin_audio.py",
+      "bytes": 33466,
+      "sha256": "6e6757e9931394439a835ff07d66c8fddbaa14a6696e34f64e0a047fb92d2d69"
+    },
+    {
+      "path": "source/a7m4/research/pin_plan.py",
+      "bytes": 44449,
+      "sha256": "8fa3c0b73528dce57530dc5937c60e43db10f807301c4992172917cad349339c"
+    },
+    {
+      "path": "source/a7m4/research/pin_presets.py",
+      "bytes": 3533,
+      "sha256": "95740e9d0c67cc950e62aafcd84a533a63f5ebe94245f4a580f09e74a094f388"
+    },
+    {
+      "path": "source/a7m4/research/sound.py",
+      "bytes": 5876,
+      "sha256": "1ddcff26b6130e736b1dbe2013ac44b4c5d52a714d7b729e96892f90a610f1c3"
+    },
+    {
+      "path": "source/a7m4/resource_profile.py",
+      "bytes": 1531,
+      "sha256": "a379aefd7511f149d9f4a7449033622c568bc4a2db137cb1f28807ddc1e7ad3e"
+    },
+    {
+      "path": "source/a7m4/toolbox/__init__.py",
+      "bytes": 113,
+      "sha256": "f2fcf7fcf74e0f53be95348660afe1bd0fe5717decf167c2a6aaa5c3912636b1"
+    },
+    {
+      "path": "source/a7m4/toolbox/__main__.py",
+      "bytes": 48,
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d"
+    },
+    {
+      "path": "source/a7m4/toolbox/backup_target_backend.py",
+      "bytes": 19979,
+      "sha256": "722f022c7e7039c7680d0f11e3ce3d565b9ebc43833bbc72364bf933b35585e7"
+    },
+    {
+      "path": "source/a7m4/toolbox/backup_target_execution.py",
+      "bytes": 9908,
+      "sha256": "63e28771af43a5803b837d88a3571af62edd9ef69e2cc21d63510f0ba5fc55b5"
+    },
+    {
+      "path": "source/a7m4/toolbox/backup_target_flow.py",
+      "bytes": 7887,
+      "sha256": "c467840b8831664dbf4c1ce37b2e0a58f7deb0b14ce05bcc025a216ca17fb449"
+    },
+    {
+      "path": "source/a7m4/toolbox/backup_target_job.py",
+      "bytes": 24016,
+      "sha256": "61d14411d8147c926d2be1edf49005e311073864ddbced68d5c4817c889c75db"
+    },
+    {
+      "path": "source/a7m4/toolbox/backup_target_program.py",
+      "bytes": 7559,
+      "sha256": "3637cfb22a06989cda630c7fa25434c0153fef322d3d219a9d6a6c9a55e5faf4"
+    },
+    {
+      "path": "source/a7m4/toolbox/backup_target_resources.py",
+      "bytes": 6739,
+      "sha256": "26ee38cf5aa94a74be66922e7054fef058c405e8e2915475ec871494b8d3b854"
+    },
+    {
+      "path": "source/a7m4/toolbox/backup_target_resume.py",
+      "bytes": 9295,
+      "sha256": "52e10417f3e16b7256400300a33ffacfcae834b5c65784e8af0c942bbd69620f"
+    },
+    {
+      "path": "source/a7m4/toolbox/backup_target_runtime.py",
+      "bytes": 3581,
+      "sha256": "174ab184470e0e4559a6d21667451b46389ee14e9c751d030c45df6d338ad51b"
+    },
+    {
+      "path": "source/a7m4/toolbox/backup_target_scope.py",
+      "bytes": 35093,
+      "sha256": "24fa11549e6f124b9054e01aab9ca3f38057d90dd80aa3d7b59635c253b4f1c2"
+    },
+    {
+      "path": "source/a7m4/toolbox/backup_target_settings.py",
+      "bytes": 6809,
+      "sha256": "4527dedbb8770aa1054473c5ac39c1e037fae208eebe1dd7ddb30de2cb8a58c3"
+    },
+    {
+      "path": "source/a7m4/toolbox/backup_target_sound.py",
+      "bytes": 3387,
+      "sha256": "3c0b725b54b4e8e06a8433028337b83cf9e6b0a0b94c5904203db1230c32fd20"
+    },
+    {
+      "path": "source/a7m4/toolbox/bk4.py",
+      "bytes": 3300,
+      "sha256": "59d7844cae69fd578d8a7c2d00b9cb68703394255ea44fa264d6d68ffc1c80f8"
+    },
+    {
+      "path": "source/a7m4/toolbox/build_scratch.py",
+      "bytes": 463,
+      "sha256": "4ec04add2995bc30e82a936bbc2d2dadd01dc7634cdf5493c70a64537f7f573b"
+    },
+    {
+      "path": "source/a7m4/toolbox/capture_inputs.py",
+      "bytes": 5632,
+      "sha256": "35a55531fc3a7aef40eb1183bb51c7009f921fa970de169f1c40383cae73587a"
+    },
+    {
+      "path": "source/a7m4/toolbox/capture_recovery.py",
+      "bytes": 7065,
+      "sha256": "d1e5ea0902ccf68aef069e649ae96ff5be22e5f19fedee9886a744cec9ad92e3"
+    },
+    {
+      "path": "source/a7m4/toolbox/capture_stability.py",
+      "bytes": 8989,
+      "sha256": "5a5cb46f929d36efaa1b23521110c506a28d4dd584fb28fd78fe80a2df15bf74"
+    },
+    {
+      "path": "source/a7m4/toolbox/cli.py",
+      "bytes": 41373,
+      "sha256": "b7ff8067bb4619d5eb5ca804e967102dd60ceabeab4ba811d5cb3864514a6f9b"
+    },
+    {
+      "path": "source/a7m4/toolbox/cutoff_scope.py",
+      "bytes": 5069,
+      "sha256": "8b8e16b94debfc353b04a64e7909e754f37459472c5f691a22a40fff9366581a"
+    },
+    {
+      "path": "source/a7m4/toolbox/data/looks-M9-LICENSE.txt",
+      "bytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    {
+      "path": "source/a7m4/toolbox/data/looks-metadata-custom1.S",
+      "bytes": 1701,
+      "sha256": "4ac381936bcc84e9dc60df9dfbacb4c5dbbcfb1cd38858e0a7716d6277b85958"
+    },
+    {
+      "path": "source/a7m4/toolbox/data/looks-metadata-custom1.ld",
+      "bytes": 458,
+      "sha256": "87e934d19e102e66ba4ceeaa8b29b85f3b0840e839c65cf6dc47cdd989a3f6ff"
+    },
+    {
+      "path": "source/a7m4/toolbox/data/looks-native17.S",
+      "bytes": 6607,
+      "sha256": "829cb7d49da00df420ab95505214413531b20f8253e21bb7d3b818f0beac4b19"
+    },
+    {
+      "path": "source/a7m4/toolbox/data/looks-native17.ld",
+      "bytes": 767,
+      "sha256": "af38fe1956008766ac79ac5e62b9963c4d4a8e15c7fbabb69ee7f1c021fc31de"
+    },
+    {
+      "path": "source/a7m4/toolbox/data/looks-playback-custom1.S",
+      "bytes": 712,
+      "sha256": "d57b5dd5d80bdc71aa1a7fa809139313cabf56bc35905bc4e0122d1139861481"
+    },
+    {
+      "path": "source/a7m4/toolbox/data/looks-playback-custom1.ld",
+      "bytes": 252,
+      "sha256": "c56fb709c0f078f466552d3a3938404ed71e9984ead15a4e747fbe792ccfdfa6"
+    },
+    {
+      "path": "source/a7m4/toolbox/data/looks-playback-stock-custom1.S",
+      "bytes": 445,
+      "sha256": "3d685301adaac5db9359077054f4c6d6123960626650ecbeab0dd7f09ae86e59"
+    },
+    {
+      "path": "source/a7m4/toolbox/data/looks-playback-stock-custom1.ld",
+      "bytes": 252,
+      "sha256": "c56fb709c0f078f466552d3a3938404ed71e9984ead15a4e747fbe792ccfdfa6"
+    },
+    {
+      "path": "source/a7m4/toolbox/data/looks-resource-forward.c",
+      "bytes": 26226,
+      "sha256": "c6718acdd58525b5f1c440c1ecbeecb3b189c5aea7e70a6c01e5d56abc18e9d5"
+    },
+    {
+      "path": "source/a7m4/toolbox/data/looks-resource-scope.LICENSE.A7C2",
+      "bytes": 1234,
+      "sha256": "c592870a8504689cbe03449c2ae582ba6517716c9e0cd2f880cea50c187d16e9"
+    },
+    {
+      "path": "source/a7m4/toolbox/data/looks-resource-scope.LICENSE.MIT",
+      "bytes": 1392,
+      "sha256": "a5aafd5c1a36bd33e8098371f499eb5a3f2bd935abf933a545c2519915f94a96"
+    },
+    {
+      "path": "source/a7m4/toolbox/data/looks-resource-tail.c",
+      "bytes": 21962,
+      "sha256": "f0410292c83f875606132826744fffd6a664eb76f8dd82b3c2aff9ba0fdff3dc"
+    },
+    {
+      "path": "source/a7m4/toolbox/data/looks-stock-carrier.S",
+      "bytes": 576,
+      "sha256": "03c71bbf0eef5b9cc6242526fea155bd1f325e5cbc7f379dc8bc18682b603cd9"
+    },
+    {
+      "path": "source/a7m4/toolbox/data/looks-stock-carrier.ld",
+      "bytes": 148,
+      "sha256": "5952da67785ae05c762d6046999fa66d56f5ddb93ee8babc1ddbbea0667e09f4"
+    },
+    {
+      "path": "source/a7m4/toolbox/data/looks-title-custom1.S",
+      "bytes": 622,
+      "sha256": "71b60ede118228b2256b1bd39c65342048cbaad8f4bd69aded5510acb065afce"
+    },
+    {
+      "path": "source/a7m4/toolbox/data/looks-title-custom1.ld",
+      "bytes": 427,
+      "sha256": "a469461f5a2dc53c28547bd3a47975ad647784c93c611cb368a25fc29f942ea7"
+    },
+    {
+      "path": "source/a7m4/toolbox/data/looks-title.S",
+      "bytes": 620,
+      "sha256": "7752a470d76123522aadb129bb01f6c446d1e81d9b6115c021e01b5634d003e0"
+    },
+    {
+      "path": "source/a7m4/toolbox/data/looks-title.ld",
+      "bytes": 429,
+      "sha256": "08827eee637975dc586ff9833c02cdde92aa26590e8f295f4abc8958045d08ea"
+    },
+    {
+      "path": "source/a7m4/toolbox/data/m9/COPYING.txt",
+      "bytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    {
+      "path": "source/a7m4/toolbox/data/original-ap-load.c",
+      "bytes": 6899,
+      "sha256": "2edb992f99ed110d312c56661df796c156b9850ce83c646303340a28298751ab"
+    },
+    {
+      "path": "source/a7m4/toolbox/data/original-ap-original-on-source.LICENSE.MIT",
+      "bytes": 1392,
+      "sha256": "a5aafd5c1a36bd33e8098371f499eb5a3f2bd935abf933a545c2519915f94a96"
+    },
+    {
+      "path": "source/a7m4/toolbox/data/original-ap-original-on-source.c",
+      "bytes": 8944,
+      "sha256": "d0ab60223eb4473e3b03dc8d44687d1af1c7aa81d4a8d061de37f4697c83c14f"
+    },
+    {
+      "path": "source/a7m4/toolbox/data/original-resource-tail-original.LICENSE.MIT",
+      "bytes": 1227,
+      "sha256": "00b66043d67d8a43d4810bdf085317e31a5fb2a94bd5f4b26a7435c3c3466694"
+    },
+    {
+      "path": "source/a7m4/toolbox/data/original-resource-tail-original.c",
+      "bytes": 19598,
+      "sha256": "e58b150b3d4c58cfb329e24153d12db96e1bbe6bd620bdb3a7ad17721c6759df"
+    },
+    {
+      "path": "source/a7m4/toolbox/data/original-resource-tail-runtime.LICENSE.MIT",
+      "bytes": 1227,
+      "sha256": "00b66043d67d8a43d4810bdf085317e31a5fb2a94bd5f4b26a7435c3c3466694"
+    },
+    {
+      "path": "source/a7m4/toolbox/data/original-resource-tail-runtime.c",
+      "bytes": 16792,
+      "sha256": "661a980adc7b7d731ce1f0dbecc81a065b8bc7ce7fe19674872bcc872519edca"
+    },
+    {
+      "path": "source/a7m4/toolbox/data/original-runtime-prereq.c",
+      "bytes": 20968,
+      "sha256": "21f86689c3dc33660d4b879b4c99d696a210c2def58b83f86208f084af33e2e0"
+    },
+    {
+      "path": "source/a7m4/toolbox/data/original-runtime.LICENSE.MIT",
+      "bytes": 1392,
+      "sha256": "a5aafd5c1a36bd33e8098371f499eb5a3f2bd935abf933a545c2519915f94a96"
+    },
+    {
+      "path": "source/a7m4/toolbox/data/pin-family.LICENSE.C2",
+      "bytes": 1234,
+      "sha256": "c592870a8504689cbe03449c2ae582ba6517716c9e0cd2f880cea50c187d16e9"
+    },
+    {
+      "path": "source/a7m4/toolbox/data/pin-family.c",
+      "bytes": 26816,
+      "sha256": "4b53174ae18f17cfb95700492c0a5a96b1f5032c07dba1ac667407bf48d85637"
+    },
+    {
+      "path": "source/a7m4/toolbox/data/pin-rebase.LICENSE.C2",
+      "bytes": 1234,
+      "sha256": "c592870a8504689cbe03449c2ae582ba6517716c9e0cd2f880cea50c187d16e9"
+    },
+    {
+      "path": "source/a7m4/toolbox/data/pin-rebase.c",
+      "bytes": 26569,
+      "sha256": "af286a932b58d0d6b239b48ab9ce83a71ed7b43dc2dd98dd43f24b67d4dc2413"
+    },
+    {
+      "path": "source/a7m4/toolbox/data/program-worker.LICENSE.C2",
+      "bytes": 1234,
+      "sha256": "c592870a8504689cbe03449c2ae582ba6517716c9e0cd2f880cea50c187d16e9"
+    },
+    {
+      "path": "source/a7m4/toolbox/data/program-worker.c",
+      "bytes": 19520,
+      "sha256": "4020f6f1d4abaecbd6d5382711f2d02ffec6aa49737d655482f6840e6fca2d03"
+    },
+    {
+      "path": "source/a7m4/toolbox/data/resource-forward.LICENSE.A7C2",
+      "bytes": 1234,
+      "sha256": "c592870a8504689cbe03449c2ae582ba6517716c9e0cd2f880cea50c187d16e9"
+    },
+    {
+      "path": "source/a7m4/toolbox/data/resource-forward.LICENSE.MIT",
+      "bytes": 1392,
+      "sha256": "a5aafd5c1a36bd33e8098371f499eb5a3f2bd935abf933a545c2519915f94a96"
+    },
+    {
+      "path": "source/a7m4/toolbox/data/resource-forward.c",
+      "bytes": 22334,
+      "sha256": "57b3521ebe05f5acf9fe1e772adfa867b5022d1c0888687e44959b1a2467cb06"
+    },
+    {
+      "path": "source/a7m4/toolbox/data/resource-sha256.h",
+      "bytes": 2294,
+      "sha256": "a189ef6a033fabf465dbd08d11ad3e1d2653b65e8d81c7a82499c66ede8df4d3"
+    },
+    {
+      "path": "source/a7m4/toolbox/data/resource-worker.c",
+      "bytes": 12905,
+      "sha256": "c588e0d41fea9f59c2f35d6fe43a542f557a33ec40f8af55043902bd9af1c750"
+    },
+    {
+      "path": "source/a7m4/toolbox/data/restore-look-model.c",
+      "bytes": 5986,
+      "sha256": "6242659a9a3abafea76973342adb7d5703b654188fac91ca3ba2a41d3177667e"
+    },
+    {
+      "path": "source/a7m4/toolbox/data/sound-scope.LICENSE.C2",
+      "bytes": 1234,
+      "sha256": "c592870a8504689cbe03449c2ae582ba6517716c9e0cd2f880cea50c187d16e9"
+    },
+    {
+      "path": "source/a7m4/toolbox/data/sound-scope.c",
+      "bytes": 28486,
+      "sha256": "afda42c10a0a98900281f306b2a283b5681e5876dbb07b7f991e4412a2b6eaeb"
+    },
+    {
+      "path": "source/a7m4/toolbox/data/toolbox.LICENSE.MIT",
+      "bytes": 1392,
+      "sha256": "a5aafd5c1a36bd33e8098371f499eb5a3f2bd935abf933a545c2519915f94a96"
+    },
+    {
+      "path": "source/a7m4/toolbox/data/workspace_probe.c",
+      "bytes": 5003,
+      "sha256": "5894865c81ce18d841356895b592a667e60e0eb185554861b5f6cf968a3b54c2"
+    },
+    {
+      "path": "source/a7m4/toolbox/dependency_probe.py",
+      "bytes": 6474,
+      "sha256": "46413b6c83fcc38813c83427e786612e6a447ba5f090d282a830fe36384fd202"
+    },
+    {
+      "path": "source/a7m4/toolbox/device_job.py",
+      "bytes": 57549,
+      "sha256": "96738112b1571e0776b3b0c2c34b829d324d2317f0f7d0a80943b94de5a5afaf"
+    },
+    {
+      "path": "source/a7m4/toolbox/diagnostics_archive.py",
+      "bytes": 19593,
+      "sha256": "bcfbfa5549538bfb5cdeb9b79f93e5edd651c979204da7a024c2f191562890b8"
+    },
+    {
+      "path": "source/a7m4/toolbox/feature_cumulative.py",
+      "bytes": 6443,
+      "sha256": "78409a96e3763e841bb4d33988ffafc0f758633a83dbc72418b0fbba6d442c1a"
+    },
+    {
+      "path": "source/a7m4/toolbox/feature_job.py",
+      "bytes": 20181,
+      "sha256": "58ee943966170cc8d3a2f190c735257094e70e69b8d8d4b480447bc6aa13bc89"
+    },
+    {
+      "path": "source/a7m4/toolbox/feature_profiles.py",
+      "bytes": 1689,
+      "sha256": "f569ee3fd096140bdfd79d6ae6ae75b2fb79a486f3ddc19f132866054cacc5f4"
+    },
+    {
+      "path": "source/a7m4/toolbox/feature_stages.py",
+      "bytes": 22336,
+      "sha256": "92d068482afb7017ea5899ca851b097639ce4e74994ec0262d1f27e66670b2fb"
+    },
+    {
+      "path": "source/a7m4/toolbox/gate_cumulative.py",
+      "bytes": 15288,
+      "sha256": "8ecaa8309ceeceb33dda7c6b0ed09eebb98c081293c8c856020a909860efd284"
+    },
+    {
+      "path": "source/a7m4/toolbox/gate_scope.py",
+      "bytes": 18626,
+      "sha256": "d174332c8b70423c60cc57e18f1f74de32fd6b472b7e6a47b244054d4165b008"
+    },
+    {
+      "path": "source/a7m4/toolbox/helpers.py",
+      "bytes": 2630,
+      "sha256": "d51ef77b60e9021644d22e08c1bd9b3da814112ce9759202692e2dcf9392298a"
+    },
+    {
+      "path": "source/a7m4/toolbox/host_metadata.py",
+      "bytes": 16062,
+      "sha256": "58ffdaa3c5579ce5562a29df4f27ceb53ebcfb360c372a3e93f0b5bc86e3bd60"
+    },
+    {
+      "path": "source/a7m4/toolbox/import_progress.py",
+      "bytes": 5363,
+      "sha256": "62818669acaacc349032b550794f342a55e05b1b32433555491526e87ba406ba"
+    },
+    {
+      "path": "source/a7m4/toolbox/job_ownership.py",
+      "bytes": 13871,
+      "sha256": "2d8c73309b69bb34d9bb1682353502688205a3e2b3968da090bad5784198ed59"
+    },
+    {
+      "path": "source/a7m4/toolbox/looks.py",
+      "bytes": 77001,
+      "sha256": "2dcba37533fb08658415b3c6d3a7d6f80dbb262eddb5b43c5dc5b48dcb5c9263"
+    },
+    {
+      "path": "source/a7m4/toolbox/looks_program.py",
+      "bytes": 23162,
+      "sha256": "e2f202394953c6b300b6324e97d70bad23c215c9b833a35ec381c66ad1ae3833"
+    },
+    {
+      "path": "source/a7m4/toolbox/looks_resource_restore.py",
+      "bytes": 18044,
+      "sha256": "beae95c782b1c824feb426bad3378becebfbd0a100331eec3beebd434c2a45b0"
+    },
+    {
+      "path": "source/a7m4/toolbox/looks_resource_scope.py",
+      "bytes": 34974,
+      "sha256": "03aaa791f73b7791f1f404a8c8cebdb747026edd0ab5a7b094d4429e6668c666"
+    },
+    {
+      "path": "source/a7m4/toolbox/looks_scope.py",
+      "bytes": 1625,
+      "sha256": "c9811d91cc1c5fc4b72787468a4877d677e48f949c249856db134c51da8b5dc6"
+    },
+    {
+      "path": "source/a7m4/toolbox/looks_settings.py",
+      "bytes": 17664,
+      "sha256": "07b904206cf970b31a41101eabd6081ca7cd5ed79bf6fed9e33c8063f363691c"
+    },
+    {
+      "path": "source/a7m4/toolbox/macos_authorization.py",
+      "bytes": 7796,
+      "sha256": "c85e44e26ba61984511adfeaa5a1abfdf93aded9bab4c83d89673b47710bc3f1"
+    },
+    {
+      "path": "source/a7m4/toolbox/macos_session.py",
+      "bytes": 26662,
+      "sha256": "6f935ff6b60eaca6a7c02c10afae502020d5adf5db6c5f9f151476033f60289a"
+    },
+    {
+      "path": "source/a7m4/toolbox/native_actions.py",
+      "bytes": 14467,
+      "sha256": "01a2a60f368359144b3579223034bd923d7253c46d8d83cd8715e6f260a8f8d0"
+    },
+    {
+      "path": "source/a7m4/toolbox/native_build.py",
+      "bytes": 2853,
+      "sha256": "5fa07e72b3be94688b9a0639892b0a1f798ea43930d604b269725b57dc32f502"
+    },
+    {
+      "path": "source/a7m4/toolbox/native_channel.py",
+      "bytes": 12521,
+      "sha256": "029b288d0c9efcdc38a0e6cc0d23348db2ed45e7f25e6de0c65fed4ea065c409"
+    },
+    {
+      "path": "source/a7m4/toolbox/native_ui.py",
+      "bytes": 2869,
+      "sha256": "c791b6ca36bd7c29d1e6a501cda6417c326f4de0ecfba5b47598afdb626c688d"
+    },
+    {
+      "path": "source/a7m4/toolbox/original_ap_load.py",
+      "bytes": 11338,
+      "sha256": "fc68b8f8364a96605ee428a54a2ffed9b3ad393495913d8105686bce41360d3f"
+    },
+    {
+      "path": "source/a7m4/toolbox/original_ap_original_on_source.py",
+      "bytes": 13181,
+      "sha256": "a7b8dfe766d99ac6b6ae2b79259c657a9c8c2932834175b0310c4ba9e748d6f1"
+    },
+    {
+      "path": "source/a7m4/toolbox/original_atomic_adapter.py",
+      "bytes": 6182,
+      "sha256": "f7aff32ab23d0caebc8e105cfb68146d8a30a1a7a41acc4e0532c36376956492"
+    },
+    {
+      "path": "source/a7m4/toolbox/original_program_adapter.py",
+      "bytes": 5216,
+      "sha256": "fec3d76ed0b509c1a09481c06e12d3bf1d1e08470589eff781bd06593d818e5d"
+    },
+    {
+      "path": "source/a7m4/toolbox/original_resource_adapter.py",
+      "bytes": 12765,
+      "sha256": "842b96b64f1638ab1a18689396442b86c5f0d68c7d43fc559befe50f162e460e"
+    },
+    {
+      "path": "source/a7m4/toolbox/original_resource_tail_original.py",
+      "bytes": 23489,
+      "sha256": "a381b428ce22b7773be33a713584e08f2019c63aac32e95ea48c47221f70e49d"
+    },
+    {
+      "path": "source/a7m4/toolbox/original_resource_tail_original_protocol.py",
+      "bytes": 5676,
+      "sha256": "a5673112f67073a66745c3b8681ed4f35561e2101cb1b5f177f90dd42e575567"
+    },
+    {
+      "path": "source/a7m4/toolbox/original_resource_tail_runtime.py",
+      "bytes": 23398,
+      "sha256": "c98fffc05bd56c6bfbdd8e9a527636a8c7dd38ca48eaaea0a30387acc4992202"
+    },
+    {
+      "path": "source/a7m4/toolbox/original_restore.py",
+      "bytes": 18138,
+      "sha256": "a15b0c5baa1ed002e743a81ba340683876af0a9a52fdf75fb7affc8abf4e6470"
+    },
+    {
+      "path": "source/a7m4/toolbox/original_restore_backend.py",
+      "bytes": 21413,
+      "sha256": "5d11e459132e2c42b34a22a7d81797b15c6d3a9b4456b2c96c222777700e6bb2"
+    },
+    {
+      "path": "source/a7m4/toolbox/original_restore_flow.py",
+      "bytes": 6873,
+      "sha256": "c26e491c035bc17a293478dab082e47ecdac262313655cd05f42a84f4138faef"
+    },
+    {
+      "path": "source/a7m4/toolbox/original_restore_job.py",
+      "bytes": 26044,
+      "sha256": "95cbca1a55e70891b0a9b3bed8bff6ec0a5c5a17af88931b238a8f7b9fe0ae94"
+    },
+    {
+      "path": "source/a7m4/toolbox/original_ro.py",
+      "bytes": 2413,
+      "sha256": "451a8b4f5b0f82c29b65d55468489122ef2878a7a9c7c94f16e6ba5ac337c8ef"
+    },
+    {
+      "path": "source/a7m4/toolbox/original_runtime_inventory.py",
+      "bytes": 22294,
+      "sha256": "ee248e8746c7b2aaba99c864c4785a40e943e7d007623e315afb69bb227d0286"
+    },
+    {
+      "path": "source/a7m4/toolbox/original_sound_adapter.py",
+      "bytes": 7361,
+      "sha256": "1db407089c425a7609743fc7f50522bdaee8a9fb418d93496980ee61dff233c8"
+    },
+    {
+      "path": "source/a7m4/toolbox/original_source_admission.py",
+      "bytes": 7071,
+      "sha256": "86a7bf57e6180feb93d5a9dcb2c353adb4468b3590ccbab9e2d9726f24c5da7b"
+    },
+    {
+      "path": "source/a7m4/toolbox/original_wbi.py",
+      "bytes": 9803,
+      "sha256": "cc41ddc4e45c71e9a65ee79ae2d0057744a30d041cc7cbdd536bd6e27ff933f4"
+    },
+    {
+      "path": "source/a7m4/toolbox/output_space.py",
+      "bytes": 2161,
+      "sha256": "89f6830d78a7279763335aa7a366d31c4de48e73bc4b3eed97da4f6a3900b179"
+    },
+    {
+      "path": "source/a7m4/toolbox/ownership.py",
+      "bytes": 13067,
+      "sha256": "7a55ae45e39efff8b0e7cc77490590f80512913f78fe6b96164a4bf315cdd6cb"
+    },
+    {
+      "path": "source/a7m4/toolbox/pin_composition.py",
+      "bytes": 13091,
+      "sha256": "0f63c5635d25a019d35fb72f0038ba00563699cb33f789aa2c7745b97c8b7deb"
+    },
+    {
+      "path": "source/a7m4/toolbox/pin_family_job.py",
+      "bytes": 48055,
+      "sha256": "f6a7d76cc520e4004a5c4b93939f7e2d4fab52d4fd9f861d2f33fe173e140c30"
+    },
+    {
+      "path": "source/a7m4/toolbox/pin_job.py",
+      "bytes": 25902,
+      "sha256": "8b4c6b673033ee82f741538d36902b328e0bbba8017d926e2bfe8b9ad68558ce"
+    },
+    {
+      "path": "source/a7m4/toolbox/pin_product.py",
+      "bytes": 13344,
+      "sha256": "b59f7fde1899bd25621209dd24c37b9a2197172439b2a78d4a6dac947150356f"
+    },
+    {
+      "path": "source/a7m4/toolbox/pin_product_worker.py",
+      "bytes": 14544,
+      "sha256": "80a9f17a0887abc5ff278612432e657d6219001ec64cd82e7be0605b5b43d2be"
+    },
+    {
+      "path": "source/a7m4/toolbox/pin_rebase.py",
+      "bytes": 12746,
+      "sha256": "dbbbb287a9b098bc04064d572f325300ac6aac7e6bd7d03278d7d2a85484b48d"
+    },
+    {
+      "path": "source/a7m4/toolbox/pin_sources.py",
+      "bytes": 19298,
+      "sha256": "68d44028ee84daebd52c803734002f3037688478864e1f5110291d7b9ed8a5a3"
+    },
+    {
+      "path": "source/a7m4/toolbox/policy.py",
+      "bytes": 3776,
+      "sha256": "f44aefd8c1c2047cab80c11bbfea8b4b595862de47f3159f7642c7ee5aa9a9fe"
+    },
+    {
+      "path": "source/a7m4/toolbox/program_job.py",
+      "bytes": 12162,
+      "sha256": "1f4e696b0565ba35cd7e89912cd7508ee89c92a7725290d56be13fe2a0d9002f"
+    },
+    {
+      "path": "source/a7m4/toolbox/program_reconciliation.py",
+      "bytes": 14920,
+      "sha256": "557e7a2426de40733e894753d4d7d67d8a004f485959ca54fe73c55f8df2050a"
+    },
+    {
+      "path": "source/a7m4/toolbox/program_worker.py",
+      "bytes": 21299,
+      "sha256": "d9062fe3b2b5c02a0e20f98cd17a7d3c5f08e6432ea3258dcbf9434ec7895ad4"
+    },
+    {
+      "path": "source/a7m4/toolbox/resource_forward.py",
+      "bytes": 22866,
+      "sha256": "94b8a3f01edd3acfd886a5d3649fae1815ed9bdc3515e31dabcab4ca18006c3f"
+    },
+    {
+      "path": "source/a7m4/toolbox/resource_worker.py",
+      "bytes": 12775,
+      "sha256": "6ec5d45ba9a4e7ae82d0538675cca0eb6898a71bc99a8e4cb2f78da22497c4e6"
+    },
+    {
+      "path": "source/a7m4/toolbox/restore.py",
+      "bytes": 14531,
+      "sha256": "8b8f637e8f1a870094f1bc6f02dcbf6da0602b07a61095d5a1b670a5d8cbc481"
+    },
+    {
+      "path": "source/a7m4/toolbox/restore_authority.py",
+      "bytes": 716,
+      "sha256": "293cc2f0413f6b111a2b361c942e45251c2c1ce677cd59583951292382237870"
+    },
+    {
+      "path": "source/a7m4/toolbox/restore_closure/source/LICENSE.MIT",
+      "bytes": 1422,
+      "sha256": "c4c8d61bb8ec60c2c5f549c1e2771242aca1a25c02ad04683c6f23c67d6481e0"
+    },
+    {
+      "path": "source/a7m4/toolbox/restore_closure/source/NOTICE.md",
+      "bytes": 1048,
+      "sha256": "0698f08d7384655ec65e4096077d4c85cd23807505a02a1a880ed61d5feb60f0"
+    },
+    {
+      "path": "source/a7m4/toolbox/restore_closure/source/usr-ro/native/usr_ro.c",
+      "bytes": 9468,
+      "sha256": "8514501812fd6a54459055290407aaa04ac5c0fe234a42a983ca6e0a55a01628"
+    },
+    {
+      "path": "source/a7m4/toolbox/restore_closure/source/usr-ro/tests/arm64_fixture.py",
+      "bytes": 9851,
+      "sha256": "0dd413d5b8f5ba649a109fb26e8b09b8453796e268e532f95b63c0b598daff2c"
+    },
+    {
+      "path": "source/a7m4/toolbox/restore_closure/source/usr-ro/tests/test_native.py",
+      "bytes": 9192,
+      "sha256": "acf46e6ac79275884714b95a6522280adbbc6101896fb9c63efb91586ae3445f"
+    },
+    {
+      "path": "source/a7m4/toolbox/restore_closure/source/usr-ro/worker.py",
+      "bytes": 11762,
+      "sha256": "2bf3b9a320e72bb0acd0bb6a05a1ff564e946294f6c4e6df8cdad4e05928bc6d"
+    },
+    {
+      "path": "source/a7m4/toolbox/restore_closure/source/wbi/drop_wire.py",
+      "bytes": 7797,
+      "sha256": "723622258476ff011b8ba95d47f88f0cd373ba4d41cac8a417d0150fa6e3578c"
+    },
+    {
+      "path": "source/a7m4/toolbox/restore_closure/source/wbi/native/drop.c",
+      "bytes": 14742,
+      "sha256": "6489a4d4a2cbb4c9a6cd995330928cdedbb6167d67f0bd99df7387e5794543ba"
+    },
+    {
+      "path": "source/a7m4/toolbox/restore_closure/source/wbi/native/prepare.c",
+      "bytes": 10342,
+      "sha256": "837a013aede5860f3caeca6323db857b5f320d569af5d48dacc8a2019da4a738"
+    },
+    {
+      "path": "source/a7m4/toolbox/restore_closure/source/wbi/prepare_wire.py",
+      "bytes": 5425,
+      "sha256": "daae7f7f7a005194aa4558f0d653c7ad36e9c8006e7c4cc1a4003f189ae2ec8c"
+    },
+    {
+      "path": "source/a7m4/toolbox/restore_closure_loader.py",
+      "bytes": 1392,
+      "sha256": "ee05d416356f835f27d88ece643e995a3c0bc0e514eaf1ea5f42a564738a7cc3"
+    },
+    {
+      "path": "source/a7m4/toolbox/restore_helper_loader.py",
+      "bytes": 2112,
+      "sha256": "6fbb8de3b745f31a71072ccaaad6dbea4e8d35bdf9d09d0f279a6eabe7f57866"
+    },
+    {
+      "path": "source/a7m4/toolbox/restore_helpers/source/RESTORE-HELPERS-A7C2-LICENSE",
+      "bytes": 1234,
+      "sha256": "c592870a8504689cbe03449c2ae582ba6517716c9e0cd2f880cea50c187d16e9"
+    },
+    {
+      "path": "source/a7m4/toolbox/restore_helpers/source/RESTORE-HELPERS-LICENSE",
+      "bytes": 1430,
+      "sha256": "1dab9691e5fba4f04f05819b413f209e8a1426f4e4fb0b070ae60ceac13707ce"
+    },
+    {
+      "path": "source/a7m4/toolbox/restore_helpers/source/original-atomic/native/LICENSE.MIT",
+      "bytes": 1092,
+      "sha256": "53d6bb0017d796a9d7f1ce44c6a4ab0a71bc5d9eb652ea5f132a9464d96b00a2"
+    },
+    {
+      "path": "source/a7m4/toolbox/restore_helpers/source/original-atomic/native/original-sha256.h",
+      "bytes": 2294,
+      "sha256": "a189ef6a033fabf465dbd08d11ad3e1d2653b65e8d81c7a82499c66ede8df4d3"
+    },
+    {
+      "path": "source/a7m4/toolbox/restore_helpers/source/original-atomic/native/original_atomic.c",
+      "bytes": 21672,
+      "sha256": "206c17eb53396021ddc9e1009daf60083db94b3f7e656d62e36a654bb9eaf480"
+    },
+    {
+      "path": "source/a7m4/toolbox/restore_helpers/source/original-atomic/tests/arm64_fixture.py",
+      "bytes": 33879,
+      "sha256": "477948dbd1ee0ceca8dc90b1b9db86736218bebc08a0c5dba62dfb6ada1d7540"
+    },
+    {
+      "path": "source/a7m4/toolbox/restore_helpers/source/original-atomic/tests/test_host.py",
+      "bytes": 16579,
+      "sha256": "f7d4f820902e040d2582025d60cf4c7d613912ccf981a54bc5223cb448cc9128"
+    },
+    {
+      "path": "source/a7m4/toolbox/restore_helpers/source/original-atomic/worker.py",
+      "bytes": 27386,
+      "sha256": "64be92a9474a44a9d5fbe0f5cef73b81703531a0e79feb9395df260e2492d9e1"
+    },
+    {
+      "path": "source/a7m4/toolbox/restore_helpers/source/resource-delta/native/prefix_delta.c",
+      "bytes": 18804,
+      "sha256": "c1c70c7bb453ed4fb3c67c8b00a2e1490db61bb00c350f549b226d8407fffc17"
+    },
+    {
+      "path": "source/a7m4/toolbox/restore_helpers/source/resource-delta/session.py",
+      "bytes": 6690,
+      "sha256": "6f8e083e32f561983538a4acb9b14baaf07998c8bff20c12c49c87a3ca3f6504"
+    },
+    {
+      "path": "source/a7m4/toolbox/restore_helpers/source/resource-delta/tests/arm64_fixture.py",
+      "bytes": 28723,
+      "sha256": "70fb615f8e0ad39aa1f83329117fda9fb7b46559320c351b3322b12aff4fb9bb"
+    },
+    {
+      "path": "source/a7m4/toolbox/restore_helpers/source/resource-delta/tests/test_host.py",
+      "bytes": 14391,
+      "sha256": "9e4cda90afceae35ecf525996da9424186021ed5b4e8a8e49afe124b87f7e95c"
+    },
+    {
+      "path": "source/a7m4/toolbox/restore_helpers/source/resource-delta/worker.py",
+      "bytes": 26015,
+      "sha256": "bcd9305c3790a8e86656e59415f52f5ad64d10a3f66702eb3501039ff63d3470"
+    },
+    {
+      "path": "source/a7m4/toolbox/restore_helpers/source/tail-restore/native/tail_restore.c",
+      "bytes": 17857,
+      "sha256": "4a169ac92939f4f9bf5c2c208c6fb49328a5759c6f8c4f23c892bd6579f28111"
+    },
+    {
+      "path": "source/a7m4/toolbox/restore_helpers/source/tail-restore/session.py",
+      "bytes": 5877,
+      "sha256": "5619658504991b969572a37c2118487a09fb30b38f398c2597f81598dd91bb7e"
+    },
+    {
+      "path": "source/a7m4/toolbox/restore_helpers/source/tail-restore/tests/arm64_fixture.py",
+      "bytes": 17248,
+      "sha256": "c452d9f69845de604c6dd492e86db5fcfa093f6f6f955502569075a80d9bef55"
+    },
+    {
+      "path": "source/a7m4/toolbox/restore_helpers/source/tail-restore/tests/test_host.py",
+      "bytes": 14245,
+      "sha256": "8b10e5dabebf3e326a5aee236e09b21f2113b046843aaae75fb26ddf7334ad94"
+    },
+    {
+      "path": "source/a7m4/toolbox/restore_helpers/source/tail-restore/tests/test_native.py",
+      "bytes": 11884,
+      "sha256": "68ea74cfb0f9a7ec63ab7a2d8d74bbc58a37b43a69e808f7d81603ecf84e9462"
+    },
+    {
+      "path": "source/a7m4/toolbox/restore_helpers/source/tail-restore/worker.py",
+      "bytes": 21294,
+      "sha256": "48e1a009399ac40a2d3368658084fed04df021b27751534d7fdb7455b2dd5e13"
+    },
+    {
+      "path": "source/a7m4/toolbox/restore_look_model.py",
+      "bytes": 13207,
+      "sha256": "1d7d56685655f65b6f505cd635beecdc44d1d53386281ed5ff31c3cb7efd008c"
+    },
+    {
+      "path": "source/a7m4/toolbox/restore_st_settings.py",
+      "bytes": 2959,
+      "sha256": "7833a4bb64634cccde3953a0ad3aec69a4fad6b46c585df925407ecb812c758f"
+    },
+    {
+      "path": "source/a7m4/toolbox/run_log.py",
+      "bytes": 8038,
+      "sha256": "18c0bde2192baeb2f635b301686d7d1c7651f03d6901447ddef17f5efd5dda29"
+    },
+    {
+      "path": "source/a7m4/toolbox/save_effects.py",
+      "bytes": 1972,
+      "sha256": "78ea419a6bb3d33be26abd297ceea46c96f150be13371d24f417f0ef43ee4893"
+    },
+    {
+      "path": "source/a7m4/toolbox/selected_baseline.py",
+      "bytes": 2299,
+      "sha256": "01ebf4a79dec899f957a7b2e80d2714a54223b9f771e1c857e2af9f63b918901"
+    },
+    {
+      "path": "source/a7m4/toolbox/selected_config.py",
+      "bytes": 6781,
+      "sha256": "2926f0bf4cae0dde0e0717d18c31e0ea413fe1c9d6fd2a1b9b3ab4c20e217879"
+    },
+    {
+      "path": "source/a7m4/toolbox/selected_cumulative.py",
+      "bytes": 5696,
+      "sha256": "a5498feed2fc1d24a29045e30965af35b49c093938ed445214b3aeb6334e1775"
+    },
+    {
+      "path": "source/a7m4/toolbox/selected_job.py",
+      "bytes": 2122,
+      "sha256": "8c7849f37bd9c0e1dd6fbb6c50ef95054f8be28a0b61f8ea75e8bc088b85fdf3"
+    },
+    {
+      "path": "source/a7m4/toolbox/selected_plan.py",
+      "bytes": 5329,
+      "sha256": "069b053f6b0998ee9bcb40cccdd51f9f1f6f84a5f6e61ada2695a03c36b65f4e"
+    },
+    {
+      "path": "source/a7m4/toolbox/selected_stages.py",
+      "bytes": 13430,
+      "sha256": "c407d209b59f068c7d440b09c7074e73c57b29a18408aae544891b2634840d99"
+    },
+    {
+      "path": "source/a7m4/toolbox/selection_ref.py",
+      "bytes": 1945,
+      "sha256": "57d9074700202576e857e3d70131b28e38d9d3e166e4b81096a3e86991bbbb95"
+    },
+    {
+      "path": "source/a7m4/toolbox/session_policy.py",
+      "bytes": 5854,
+      "sha256": "aa3283390862b35d7eb132999095ddaf25c54fd6b6f1bc69f81fd21b7552d51e"
+    },
+    {
+      "path": "source/a7m4/toolbox/settings_archive.py",
+      "bytes": 22488,
+      "sha256": "46d271522c3c95e14f438b664ad269686ff6a45ee314f3a1c739313dae5ec1f7"
+    },
+    {
+      "path": "source/a7m4/toolbox/settings_channel.py",
+      "bytes": 12032,
+      "sha256": "393945396967bcfff4660efafd92e8333f28914106f1ecaed960893d3b079e11"
+    },
+    {
+      "path": "source/a7m4/toolbox/settings_job.py",
+      "bytes": 24199,
+      "sha256": "5826a8586c42d4c293aafb811b245d8a5a7c0e2dc97750629da9eb3872cdbd96"
+    },
+    {
+      "path": "source/a7m4/toolbox/settings_plan.py",
+      "bytes": 35101,
+      "sha256": "fcf71e02983bedef008413c0292f379dd87215147743fbaac2fd2e82de835037"
+    },
+    {
+      "path": "source/a7m4/toolbox/settings_scope.py",
+      "bytes": 5788,
+      "sha256": "91a8c444ad13c52abd7fff58ab17f49a841555aa0d0d23d2171886811d3e2f79"
+    },
+    {
+      "path": "source/a7m4/toolbox/sound_cumulative.py",
+      "bytes": 4651,
+      "sha256": "42d6d4e9a829f46297f8cb8163ec6b8c6453414c57e13bccc6729c41a522f9ad"
+    },
+    {
+      "path": "source/a7m4/toolbox/sound_cumulative_job.py",
+      "bytes": 22192,
+      "sha256": "125f0a3ed69919e8007fc155dc3935c30eb9c874dc52fb2cf33cd6c1e860dc29"
+    },
+    {
+      "path": "source/a7m4/toolbox/sound_scope.py",
+      "bytes": 18052,
+      "sha256": "8cef16684c0fab0a9865937fc61f311ab66a705ee25fe82c69294a2dfeb2a558"
+    },
+    {
+      "path": "source/a7m4/toolbox/tail_cleanup.py",
+      "bytes": 1913,
+      "sha256": "ce9c2556fcf65c8038f3644f0d32fec289a7d2adc3cbc355fb65abddaaa3af70"
+    },
+    {
+      "path": "source/a7m4/toolbox/transport.py",
+      "bytes": 24384,
+      "sha256": "da7ab91f7cb02c43ae3b83821efdc1e7aa6306189f1f6f5727ad934b3755ca3d"
+    },
+    {
+      "path": "source/a7m4/toolbox/usb_read.py",
+      "bytes": 37909,
+      "sha256": "0a402af9a6b2ab03ba7030a268d1b9200bd9e142a7f20c2caaefdce43fc35dc6"
+    },
+    {
+      "path": "source/a7m4/toolbox/workspace.py",
+      "bytes": 3579,
+      "sha256": "4aedcf2584957b0e2115c20c47f2e3e68cd3f5a3b5d04fdcc15a57cb480069b3"
+    },
+    {
+      "path": "source/native/looks-resource-scope/LICENSE.A7C2",
+      "bytes": 1234,
+      "sha256": "c592870a8504689cbe03449c2ae582ba6517716c9e0cd2f880cea50c187d16e9"
+    },
+    {
+      "path": "source/native/looks-resource-scope/LICENSE.MIT",
+      "bytes": 1392,
+      "sha256": "a5aafd5c1a36bd33e8098371f499eb5a3f2bd935abf933a545c2519915f94a96"
+    },
+    {
+      "path": "source/native/looks-resource-scope/NOTICE.md",
+      "bytes": 1034,
+      "sha256": "b9609aeb328fd4fdd62b211144ff6cdb90b587927644990d5bb434f3f337dc7b"
+    },
+    {
+      "path": "source/native/looks-resource-scope/forward.c",
+      "bytes": 26226,
+      "sha256": "c6718acdd58525b5f1c440c1ecbeecb3b189c5aea7e70a6c01e5d56abc18e9d5"
+    },
+    {
+      "path": "source/native/looks-resource-scope/tail.c",
+      "bytes": 21962,
+      "sha256": "f0410292c83f875606132826744fffd6a664eb76f8dd82b3c2aff9ba0fdff3dc"
+    },
+    {
+      "path": "source/native/original-ap-load/probe.c",
+      "bytes": 6717,
+      "sha256": "7f204911b927a8d2e59c6829843e4014d10f1abb84ab9a461a14b592f14e623f"
+    },
+    {
+      "path": "source/native/pin-family/LICENSE.C2",
+      "bytes": 1234,
+      "sha256": "c592870a8504689cbe03449c2ae582ba6517716c9e0cd2f880cea50c187d16e9"
+    },
+    {
+      "path": "source/native/pin-family/NOTICE.md",
+      "bytes": 1416,
+      "sha256": "40429397155211e8ba31d388911e6fe53994b4cd6a8300a1d8ebc8400f64d03a"
+    },
+    {
+      "path": "source/native/pin-family/program.c",
+      "bytes": 26816,
+      "sha256": "4b53174ae18f17cfb95700492c0a5a96b1f5032c07dba1ac667407bf48d85637"
+    },
+    {
+      "path": "source/native/pin-rebase/LICENSE.C2",
+      "bytes": 1234,
+      "sha256": "c592870a8504689cbe03449c2ae582ba6517716c9e0cd2f880cea50c187d16e9"
+    },
+    {
+      "path": "source/native/pin-rebase/NOTICE.md",
+      "bytes": 1208,
+      "sha256": "6e5f57a84465d1ef6c368feb8721f21b33c990ef4747d2bd558a9fff0b230095"
+    },
+    {
+      "path": "source/native/pin-rebase/program.c",
+      "bytes": 26569,
+      "sha256": "af286a932b58d0d6b239b48ab9ce83a71ed7b43dc2dd98dd43f24b67d4dc2413"
+    },
+    {
+      "path": "source/native/pin-sound-dynamic/program.c",
+      "bytes": 25913,
+      "sha256": "4461e92ad1b683bc9e623e4e12892a177c6c83b5430e46de7ee06ef15ee07355"
+    },
+    {
+      "path": "source/native/pin-sound-dynamic/test_native.py",
+      "bytes": 14133,
+      "sha256": "22d739f1ea5e340a6d25a2b4d50f601f59d3318556ea4429f30043b77285f2c0"
+    },
+    {
+      "path": "source/native/program-worker/LICENSE.C2",
+      "bytes": 1234,
+      "sha256": "c592870a8504689cbe03449c2ae582ba6517716c9e0cd2f880cea50c187d16e9"
+    },
+    {
+      "path": "source/native/program-worker/NOTICE.md",
+      "bytes": 779,
+      "sha256": "d7f3e261d42fb4ab8ada4310104e389e852bdbd84e8a1f12b64b967738de8308"
+    },
+    {
+      "path": "source/native/program-worker/program.c",
+      "bytes": 19520,
+      "sha256": "4020f6f1d4abaecbd6d5382711f2d02ffec6aa49737d655482f6840e6fca2d03"
+    },
+    {
+      "path": "source/native/resource-forward/LICENSE.A7C2",
+      "bytes": 1234,
+      "sha256": "c592870a8504689cbe03449c2ae582ba6517716c9e0cd2f880cea50c187d16e9"
+    },
+    {
+      "path": "source/native/resource-forward/LICENSE.MIT",
+      "bytes": 1392,
+      "sha256": "a5aafd5c1a36bd33e8098371f499eb5a3f2bd935abf933a545c2519915f94a96"
+    },
+    {
+      "path": "source/native/resource-forward/NOTICE.md",
+      "bytes": 1038,
+      "sha256": "4bff4bb48093d5d74b730a421717d4a2ab23cb0d0d12bf1169afafbfc64d284e"
+    },
+    {
+      "path": "source/native/resource-forward/resource-forward.c",
+      "bytes": 22334,
+      "sha256": "57b3521ebe05f5acf9fe1e772adfa867b5022d1c0888687e44959b1a2467cb06"
+    },
+    {
+      "path": "source/native/resource-worker/NOTICE.md",
+      "bytes": 610,
+      "sha256": "bbd219f4f8eff5e209582a5d00e57960afcaffe5dda137d946a277e132ada5e6"
+    },
+    {
+      "path": "source/native/resource-worker/resource-sha256.h",
+      "bytes": 2294,
+      "sha256": "a189ef6a033fabf465dbd08d11ad3e1d2653b65e8d81c7a82499c66ede8df4d3"
+    },
+    {
+      "path": "source/native/resource-worker/resource-worker.c",
+      "bytes": 12212,
+      "sha256": "1f60d6c442c6d6a61dfab7b6208093deb3f667053ae35772bc0dc81546abf861"
+    },
+    {
+      "path": "source/native/service-fl23-direct/LICENSE.C2",
+      "bytes": 1234,
+      "sha256": "c592870a8504689cbe03449c2ae582ba6517716c9e0cd2f880cea50c187d16e9"
+    },
+    {
+      "path": "source/native/service-fl23-direct/NOTICE.md",
+      "bytes": 915,
+      "sha256": "2e7e1838cbc192aa9353e2af7a29e4c8e0b4afe51a24f7ae81d159e48401bc4f"
+    },
+    {
+      "path": "source/native/service-fl23-direct/program.c",
+      "bytes": 15586,
+      "sha256": "8db7bd3b1363bde411b4a1d0e3bf681dd556cb896a9e6b65c4916ea3df502e92"
+    },
+    {
+      "path": "source/native/sound-scope/LICENSE.C2",
+      "bytes": 1234,
+      "sha256": "c592870a8504689cbe03449c2ae582ba6517716c9e0cd2f880cea50c187d16e9"
+    },
+    {
+      "path": "source/native/sound-scope/NOTICE.md",
+      "bytes": 1709,
+      "sha256": "12d7e1e57b7be981e59c62b0ef34f50f0e978685a37ff081e19559685f9b5b73"
+    },
+    {
+      "path": "source/native/sound-scope/program.c",
+      "bytes": 28486,
+      "sha256": "afda42c10a0a98900281f306b2a283b5681e5876dbb07b7f991e4412a2b6eaeb"
+    },
+    {
+      "path": "source/packaging/internal-research/A7M4Product.swift",
+      "bytes": 304675,
+      "sha256": "eb8c14a0af4ee26aef51460c4287d7a4a407318c4d4aa30a793cd4f4c5add441"
+    },
+    {
+      "path": "source/pyproject.toml",
+      "bytes": 1338,
+      "sha256": "85caddbbbf625a121e050d0f3d3571330ca7e0bb005994dcde5951ce7a7ad188"
+    },
+    {
+      "path": "source/run_research.py",
+      "bytes": 2279,
+      "sha256": "3546534d421bd5ee3d13eca55a173103f3be11df1aaf777f9ad643fd07987983"
+    },
+    {
+      "path": "source/run_toolbox.py",
+      "bytes": 583,
+      "sha256": "a80f02085513bc6a0e6d5b6dcd0f2a01f629af58a481325fa1c3ea5f1f0fd6c2"
+    },
+    {
+      "path": "source/third_party/pmca/LICENSE.python-sha1.txt",
+      "bytes": 1078,
+      "sha256": "4d1ff9370efb85b751e3fe1b5d376a512a5573d2b2dd75b151d03fdbefd89bcd"
+    },
+    {
+      "path": "source/third_party/pmca/LICENSE.txt",
+      "bytes": 1072,
+      "sha256": "a485f27d0b22eb7fd9b9419795695d0a1750ea32c961d11c1dd8ddade564dedf"
+    },
+    {
+      "path": "source/third_party/pmca/PROVENANCE.json",
+      "bytes": 2929,
+      "sha256": "32f9489d87d07769c1bc1a4fe1cf7808409796a6ac9c9fe3ce27d054520c8215"
+    },
+    {
+      "path": "source/third_party/pmca/pmca/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "source/third_party/pmca/pmca/usb/__init__.py",
+      "bytes": 4101,
+      "sha256": "db2fd3d0dfa2e6f315a14291be8951a5092875e8e5858183cabf2cec46a0fcda"
+    },
+    {
+      "path": "source/third_party/pmca/pmca/usb/constants.py",
+      "bytes": 12369,
+      "sha256": "94bf081d3c1a51a60cf8fc214dce25a491413d4d786716460fde3fba832eb692"
+    },
+    {
+      "path": "source/third_party/pmca/pmca/usb/crypto.py",
+      "bytes": 1420,
+      "sha256": "74660a42235f7efac6f47f38e2151049647bd0bc61ed6eb0763538815b2b6886"
+    },
+    {
+      "path": "source/third_party/pmca/pmca/usb/driver/__init__.py",
+      "bytes": 1325,
+      "sha256": "dd7d53720a5a12bf87954e687f939fc71d9b1f30428faea4ba7eb217a0e788a4"
+    },
+    {
+      "path": "source/third_party/pmca/pmca/usb/driver/generic/__init__.py",
+      "bytes": 6767,
+      "sha256": "24cda5b97dcd7e5ff4c6af0e0a8d66900688ef2ba09dc0fb53c42ab6b8c69123"
+    },
+    {
+      "path": "source/third_party/pmca/pmca/usb/driver/generic/libusb.py",
+      "bytes": 3027,
+      "sha256": "1c80cfaa0692cf308bd086edc9a9bad3691804b50182993c1dd960c932daa1df"
+    },
+    {
+      "path": "source/third_party/pmca/pmca/usb/sony.py",
+      "bytes": 35959,
+      "sha256": "b3acf2450a8a7827228988d47d8a0da16e20ef341450027d21cb0579ca66ae51"
+    },
+    {
+      "path": "source/third_party/pmca/pmca/util/__init__.py",
+      "bytes": 1485,
+      "sha256": "1bf318b75faf450011123ce430becc87aec8a7a161765afe38c498cdd20cbacf"
+    },
+    {
+      "path": "source-index.json",
+      "bytes": 59683,
+      "sha256": "d034a0f119df7d50233c71fe7aa35cadb2c6c57e40020f8a8ca7ed216c2d0c68"
+    }
+  ]
+}
