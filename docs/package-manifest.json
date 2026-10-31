@@ -26,13 +26,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 2974,
-      "sha256": "1056e971df3d120c923a08df07985bf0fa99c3e8cace40b53aaf0e52f37e5ea7"
+      "bytes": 3273,
+      "sha256": "dc320abc4a532c760dfd60598c8076f5db95570da8f8abf1bde1bab61d77a054"
     },
     {
       "path": "README_zh.md",
-      "bytes": 2562,
-      "sha256": "4dee09b232efa6aee39c1be4ca5518b622bff911c4d2afca9c467cfa31711b92"
+      "bytes": 2830,
+      "sha256": "2bea640de32a66a21279829e823391678188dea99562167148569904dc998e88"
     },
     {
       "path": "cli/a7m4-toolbox",

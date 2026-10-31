@@ -13,6 +13,11 @@ Color pipeline and creative looks research for the A7M4.
 
 This repository is the release home for project documentation and selected release artifacts.
 
+## Requirements
+
+- **Camera: A7M4 running firmware v6.02.** Other models and firmware versions are not supported by this release.
+- **Cable: a quality USB-C (Type-C) cable that supports data transfer.** A charge-only cable will not work. The connection must remain stable throughout the operation.
+
 ## Research materials
 
 These materials provide alpha.62 research notes, shared CLI entry points and source excerpts for review and further study.
