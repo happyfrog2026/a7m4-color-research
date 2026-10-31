@@ -1,5 +1,7 @@
 # Helper 指路与 CLI 用法
 
+[English](helper-guide.md) | 简体中文
+
 本资料对应 alpha.62 的共享 driver 快照：**0.5.1-alpha.62**。便捷入口只接受这一匹配版本的已安装 App；发行页面的版本标签不能代替实际 driver 版本检查。
 
 GUI 和 CLI 共用计划、范围校验、任务协调、结果核对及退出逻辑。`source/` 保留源码阅读结构，运行依赖匹配 App 中的完整资源、清单和运行环境。
@@ -20,7 +22,7 @@ GUI 和 CLI 共用计划、范围校验、任务协调、结果核对及退出�
 | 恢复、续接与启动后核验 | `driver backup-target-restore`、`backup-target-verify` | 显式相机操作 |
 | 记录用户最终观察 | `driver backup-target-acceptance` | 核对本机保留证据 |
 
-表中的 `driver …` 都接在 `./cli/a7m4-toolbox` 后面。完整参数以对应命令的 `--help` 为准。
+表中的 `driver …` 都接在 `./cli/a7m4-toolbox` 后面。完整参数以对应命令的 `--help` 为准；示例均从仓库根目录运行。
 
 便捷脚本不会自动提权、代填用户确认、重试或跨过恢复节点。App 不在默认位置时，可通过 `A7M4_APP` 指向匹配的 `.app`。GUI 本次打开期间的管理员会话由 App 管理；这些 CLI 脚本不会另建或接管 GUI 会话。
 
@@ -28,22 +30,22 @@ GUI 和 CLI 共用计划、范围校验、任务协调、结果核对及退出�
 
 | 阅读目标 | 代码入口 |
 | --- | --- |
-| 共享 CLI、参数与结果 | [cli.py](source/a7m4/toolbox/cli.py)、[run_toolbox.py](source/run_toolbox.py)、[run_research.py](source/run_research.py) |
-| 当前备份范围与输入校验 | [resource_profile.py](source/a7m4/resource_profile.py)、[capture_inputs.py](source/a7m4/toolbox/capture_inputs.py) |
-| 备份读取与已有数据接纳 | [usb_read.py](source/a7m4/toolbox/usb_read.py)、[capture_recovery.py](source/a7m4/toolbox/capture_recovery.py) |
-| 最终选择与素材绑定 | [selected_config.py](source/a7m4/toolbox/selected_config.py)、[selected_plan.py](source/a7m4/toolbox/selected_plan.py) |
-| 当前安装主线 | [selected_job.py](source/a7m4/toolbox/selected_job.py)、[selected_stages.py](source/a7m4/toolbox/selected_stages.py) |
-| 原始备份与当前状态的恢复计划 | [backup_target_scope.py](source/a7m4/toolbox/backup_target_scope.py)、[backup_target_execution.py](source/a7m4/toolbox/backup_target_execution.py) |
-| 恢复阶段、检查点与最终确认 | [backup_target_flow.py](source/a7m4/toolbox/backup_target_flow.py)、[backup_target_job.py](source/a7m4/toolbox/backup_target_job.py)、[backup_target_resume.py](source/a7m4/toolbox/backup_target_resume.py) |
-| ST 保护与启动后状态验证 | [restore_st_settings.py](source/a7m4/toolbox/restore_st_settings.py)、[restore_look_model.py](source/a7m4/toolbox/restore_look_model.py) |
-| 功能任务与有限请求 | [program_worker.py](source/a7m4/toolbox/program_worker.py)、[resource_worker.py](source/a7m4/toolbox/resource_worker.py)、[native_channel.py](source/a7m4/toolbox/native_channel.py) |
-| 声音准备、编码和试听 | [pin_audio.py](source/a7m4/research/pin_audio.py)、[native_audio_codec.py](source/a7m4/research/native_audio_codec.py) |
-| 原生图标生成与解码预览 | [native_icons.py](source/a7m4/research/native_icons.py)、[looks_resource_scope.py](source/a7m4/toolbox/looks_resource_scope.py) |
-| 临时工作区预算 | [workspace.py](source/a7m4/toolbox/workspace.py)、[native_build.py](source/a7m4/toolbox/native_build.py) |
-| 任务互斥与自有临时文件 | [ownership.py](source/a7m4/toolbox/ownership.py)、[job_ownership.py](source/a7m4/toolbox/job_ownership.py) |
-| 管理员授权与会话 | [macos_authorization.py](source/a7m4/toolbox/macos_authorization.py)、[macos_session.py](source/a7m4/toolbox/macos_session.py) |
-| 分段日志与诊断导出 | [run_log.py](source/a7m4/toolbox/run_log.py)、[diagnostics_archive.py](source/a7m4/toolbox/diagnostics_archive.py) |
-| GUI 调用和人工交互 | [A7M4Product.swift](source/packaging/internal-research/A7M4Product.swift) |
+| 共享 CLI、参数与结果 | [cli.py](../source/a7m4/toolbox/cli.py)、[run_toolbox.py](../source/run_toolbox.py)、[run_research.py](../source/run_research.py) |
+| 当前备份范围与输入校验 | [resource_profile.py](../source/a7m4/resource_profile.py)、[capture_inputs.py](../source/a7m4/toolbox/capture_inputs.py) |
+| 备份读取与已有数据接纳 | [usb_read.py](../source/a7m4/toolbox/usb_read.py)、[capture_recovery.py](../source/a7m4/toolbox/capture_recovery.py) |
+| 最终选择与素材绑定 | [selected_config.py](../source/a7m4/toolbox/selected_config.py)、[selected_plan.py](../source/a7m4/toolbox/selected_plan.py) |
+| 当前安装主线 | [selected_job.py](../source/a7m4/toolbox/selected_job.py)、[selected_stages.py](../source/a7m4/toolbox/selected_stages.py) |
+| 原始备份与当前状态的恢复计划 | [backup_target_scope.py](../source/a7m4/toolbox/backup_target_scope.py)、[backup_target_execution.py](../source/a7m4/toolbox/backup_target_execution.py) |
+| 恢复阶段、检查点与最终确认 | [backup_target_flow.py](../source/a7m4/toolbox/backup_target_flow.py)、[backup_target_job.py](../source/a7m4/toolbox/backup_target_job.py)、[backup_target_resume.py](../source/a7m4/toolbox/backup_target_resume.py) |
+| ST 保护与启动后状态验证 | [restore_st_settings.py](../source/a7m4/toolbox/restore_st_settings.py)、[restore_look_model.py](../source/a7m4/toolbox/restore_look_model.py) |
+| 功能任务与有限请求 | [program_worker.py](../source/a7m4/toolbox/program_worker.py)、[resource_worker.py](../source/a7m4/toolbox/resource_worker.py)、[native_channel.py](../source/a7m4/toolbox/native_channel.py) |
+| 声音准备、编码和试听 | [pin_audio.py](../source/a7m4/research/pin_audio.py)、[native_audio_codec.py](../source/a7m4/research/native_audio_codec.py) |
+| 原生图标生成与解码预览 | [native_icons.py](../source/a7m4/research/native_icons.py)、[looks_resource_scope.py](../source/a7m4/toolbox/looks_resource_scope.py) |
+| 临时工作区预算 | [workspace.py](../source/a7m4/toolbox/workspace.py)、[native_build.py](../source/a7m4/toolbox/native_build.py) |
+| 任务互斥与自有临时文件 | [ownership.py](../source/a7m4/toolbox/ownership.py)、[job_ownership.py](../source/a7m4/toolbox/job_ownership.py) |
+| 管理员授权与会话 | [macos_authorization.py](../source/a7m4/toolbox/macos_authorization.py)、[macos_session.py](../source/a7m4/toolbox/macos_session.py) |
+| 分段日志与诊断导出 | [run_log.py](../source/a7m4/toolbox/run_log.py)、[diagnostics_archive.py](../source/a7m4/toolbox/diagnostics_archive.py) |
+| GUI 调用和人工交互 | [A7M4Product.swift](../source/packaging/internal-research/A7M4Product.swift) |
 
 源码、许可与来源摘录逐文件记录在 [source-index.json](source-index.json)。摘录保持来源文件内容；其中的历史注释和状态标签不等于当前相机的现场结果。
 
@@ -63,7 +65,7 @@ GUI 和 CLI 共用计划、范围校验、任务协调、结果核对及退出�
 
 ### 封存最终选择
 
-[FL2／FL3＋静音](examples/fl23-silent.draft.json) 和 [M9 上弦组合](examples/m9-recock.draft.json) 是两份 draft 示例。便捷预设填入编辑值；最终执行绑定的是实际编辑值及素材，不是预设编号。
+[FL2／FL3＋静音](../examples/fl23-silent.draft.json) 和 [M9 上弦组合](../examples/m9-recock.draft.json) 是两份 draft 示例。便捷预设填入编辑值；最终执行绑定的是实际编辑值及素材，不是预设编号。
 
 ```sh
 ./cli/a7m4-toolbox driver selected-freeze \

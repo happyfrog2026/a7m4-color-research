@@ -15,7 +15,7 @@ Usage: ./cli/a7m4-toolbox [driver ... | local-command ...]
 Requires the matching installed App. Override its path with A7M4_APP.
 All driver arguments are forwarded unchanged. There is no automatic sudo,
 device connection, retry, acknowledgement or checkpoint advancement.
-See HELPER-GUIDE.md for the active GUI command chain.
+See docs/helper-guide.md for the active GUI command chain.
 EOF
 }
 

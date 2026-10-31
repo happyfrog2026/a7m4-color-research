@@ -1,5 +1,7 @@
 # Upstreams / 上游研究来源
 
+[English](upstream-attribution.md) | 简体中文
+
 以下名称和链接来自 alpha.62 App「参考与关于」的研究来源列表；用途按本仓库资料范围概括。
 
 | 项目／来源 | 参考用途 |
@@ -18,4 +20,4 @@
 | [Sharma / Wu / Dalal CIEDE2000](https://hajim.rochester.edu/ece/sites/gsharma/ciede2000/) | 色差公式与公开测试资料。 |
 | [Ralf Brown / darktable Leica M9 style](https://github.com/darktable-org/darktable/blob/14958755b87f4a6c6418549204c46a613d473e90/data/styles/darktable_Leica_M9.dtstyle) | 固定 M9 候选配方的来源。 |
 
-上游项目保留各自的版权、许可和必要声明。引用不表示相关项目对本工具作出背书，也不把机型适用性自动推广到其他设备。实际采用的源码声明见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+上游项目保留各自的版权、许可和必要声明。引用不表示相关项目对本工具作出背书，也不把机型适用性自动推广到其他设备。实际采用的源码声明见 [来源与许可说明](third-party-notices_zh.md)。

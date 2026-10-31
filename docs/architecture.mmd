@@ -1,0 +1,26 @@
+flowchart TD
+    GUI["GUI: editing and user confirmation"] --> Driver["Shared CLI driver"]
+    CLI["CLI: explicit arguments"] --> Driver
+    Driver --> Prepare["Local assets, backup validation and planning"]
+    Prepare --> Check["Body, version, current state and dependency checks"]
+    Check --> Action{"Operation"}
+    Action -->|Install| Install["Apply selected looks, sounds, names and icons"]
+    Install --> InstallVerify["Verify results and exit safely"]
+    InstallVerify --> InstallUser["User cold start and feature checks"]
+    InstallUser --> InstallDone["Installation complete"]
+    Action -->|Restore from backup| Compare["Plan restoration from original backup and current state"]
+    Compare --> ST["Save ST protection state if required"]
+    ST --> FirstBoot["Safe checkpoint: user cold start and reconnection"]
+    FirstBoot --> STProof["Verify live ST state after a new boot"]
+    STProof --> Restore["Restore supported configuration"]
+    Restore --> Ready{"Runtime conditions ready for the next stage?"}
+    Ready -->|User action required| Checkpoint["Save a safe checkpoint and prompt the user"]
+    Checkpoint --> Resume["User action, fresh capture and continuation"]
+    Resume --> Ready
+    Ready -->|Ready| Finish["Complete display resources and verify final results"]
+    Finish --> FinalBoot["Restart as instructed; verify after startup"]
+    FinalBoot --> User["User checks names, icons, sound, shooting and playback"]
+    User --> Restored["Restoration complete"]
+    Driver -.-> Records["Local originals, plans, checkpoints and diagnostics"]
+    classDef human fill:#fff0d6,stroke:#b77900;
+    class InstallUser,FirstBoot,Resume,FinalBoot,User human;

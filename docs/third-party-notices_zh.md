@@ -1,6 +1,8 @@
 # 来源与许可说明
 
-本仓库新增文档和便捷入口适用根目录的 [PolyForm Noncommercial License 1.0.0](LICENSE)。已有源码摘录保留各自原许可；根许可证不覆盖或替换第三方许可。
+[English](third-party-notices.md) | 简体中文
+
+本仓库新增文档和便捷入口适用根目录的 [PolyForm Noncommercial License 1.0.0](../LICENSE)。已有源码摘录保留各自原许可；根许可证不覆盖或替换第三方许可。
 
 ## 已有源码与声明
 
@@ -10,7 +12,7 @@
 - M9 配方的历史来源为 Ralf Brown 与 darktable contributors 的 Leica M9 style，其来源及 GPL-3.0-or-later 声明保留在源码快照相应许可文件中。此源码摘录不包含配方数据与完整素材。
 - `source/THIRD_PARTY_NOTICES.md` 是既有组合包的原始来源记录，保留供来源核对；其中对原组合包内容的描述不表示相应素材或运行时已包含在本仓库。
 
-各来源的完整研究归因见 [UPSTREAM_ATTRIBUTION.md](UPSTREAM_ATTRIBUTION.md)。逐目录原文和源文件内的必要声明均予以保留，不以此项目的许可证重新授权。
+各来源的完整研究归因见 [上游研究来源](upstream-attribution_zh.md)。逐目录原文和源文件内的必要声明均予以保留，不以此项目的许可证重新授权。
 
 ## 本仓库内容范围
 

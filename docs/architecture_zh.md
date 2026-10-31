@@ -1,5 +1,7 @@
 # 高层使用流程 · alpha.62
 
+[English](architecture.md) | 简体中文
+
 本图描述工具的阶段、检查与用户操作，不列具体设备地址或实现点位。
 
 ```mermaid

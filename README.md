@@ -1,11 +1,13 @@
 # A7M4 Color Research
 
-[Telegram（推荐）](https://t.me/+gmbCDvVseX41Nzcx)
-请不要随便下载就用，群里会通知：）
-请至少预留20分钟用于应用更改，至少保留35分钟用于恢复备份。
-目前版本支持FL2/FL3/M9滤镜USB-C导入，和自定义电子快门声。
-本项目抛砖引玉，仅限个人学习用，严禁用于商用。
-使用有风险，一切责任由使用者负责。
+English | [简体中文](README_zh.md)
+
+[Telegram (recommended)](https://t.me/+gmbCDvVseX41Nzcx)
+Please check the group announcements before downloading and using the tool.
+Allow at least 20 minutes to apply changes and at least 35 minutes to restore a backup.
+The current version supports FL2/FL3/M9 filter import over USB-C and custom electronic shutter sounds.
+This project is for personal study only. Commercial use is prohibited.
+Use is at your own risk; users are responsible for their actions.
 
 Color pipeline and creative looks research for the A7M4.
 
@@ -13,24 +15,24 @@ This repository is the release home for project documentation and selected relea
 
 ## Research materials
 
-本次提供 alpha.62 的研究说明、共享 CLI 入口与源码摘录，便于阅读、复核和继续研究。
+These materials provide alpha.62 research notes, shared CLI entry points and source excerpts for review and further study.
 
-| 入口 | 内容 |
+| Entry | Contents |
 | --- | --- |
-| [高层流程图](ARCHITECTURE.md) | 安装、从备份恢复、人工冷启动及功能检查 |
-| [Helper 指路](HELPER-GUIDE.md) | 模块地图、本机检查、备份校验和共享 CLI 用法 |
-| [上游研究来源](UPSTREAM_ATTRIBUTION.md) | App「参考与关于」中的研究来源及各自用途 |
-| [源码摘录](source/) | 对应版本的共享 helper 与 GUI 调用方 |
-| [本次核验说明](VERIFICATION.md) | 资料与便捷入口的核对范围 |
+| [High-level workflow](docs/architecture.md) | Installation, restoration from a backup, user cold starts and functional checks |
+| [Helper guide](docs/helper-guide.md) | Module map, local checks, backup validation and shared CLI usage |
+| [Upstream research](docs/upstream-attribution.md) | Research sources listed in the App's References and About page |
+| [Source excerpts](source/) | Shared helpers and GUI callers from the corresponding version |
+| [Bilingual documentation](docs/documentation.md) | Naming, language links and synchronized updates |
 
 ### Supported scope
 
-- A7M4，受支持的 6.02 构建；实际作业会核对机身和版本。
-- FL2／FL3、固定 M9 配方、自定义1的显示名称及图标，以及电子快门声音。
-- 从修改前的原始备份恢复已支持功能范围；中间检查点不代表恢复完成。
-- 每次重新配置前，先按工具指引从原始备份恢复。
+- A7M4 with a supported 6.02 build; actual jobs check the body and version.
+- FL2/FL3, the fixed M9 recipe, Custom1 display names and icons, and electronic shutter sounds.
+- Restoration of supported feature areas from a pre-modification original backup; an intermediate checkpoint is not completion.
+- Restore from the original backup as instructed before applying a new configuration.
 
-源码摘录用于阅读与继续开发，运行入口复用匹配 App 的完整运行环境。它不是可直接启动的独立安装目录。对应 driver 版本及使用条件见 [Helper 指路](HELPER-GUIDE.md)。
+The source excerpts are for reading and further development. Runtime entry points reuse the complete environment of a matching App; the excerpts are not a standalone installation directory. See the [helper guide](docs/helper-guide.md) for the driver version and runtime requirements.
 
 ### Local CLI checks
 
@@ -42,8 +44,8 @@ This repository is the release home for project documentation and selected relea
 ./cli/export-logs /absolute/path/new-history.zip
 ```
 
-这些示例只检查本机环境、已有备份及本机日志，不打开相机服务。创建输出时使用新目录或新文件名。实际相机操作请按匹配版本 App 的提示进行，保持连接；仅在明确提示冷启动时按步骤断开。
+These examples check only the local environment, existing backups and local logs. They do not open a camera service. Use a new directory or filename for output. Follow the matching App's prompts for actual camera operations and keep the camera connected; disconnect only when explicitly instructed to perform a cold start.
 
 ## License
 
-本仓库新增文档与便捷入口遵循 [PolyForm Noncommercial License 1.0.0](LICENSE)。已有源码摘录及第三方组件保留其原有许可、版权和必要声明，见 [来源与许可说明](THIRD_PARTY_NOTICES.md)。
+New documentation and convenience entry points in this repository follow the [PolyForm Noncommercial License 1.0.0](LICENSE). Existing source excerpts and third-party components retain their original licenses, copyrights and required notices; see [Third-party notices](docs/third-party-notices.md).
