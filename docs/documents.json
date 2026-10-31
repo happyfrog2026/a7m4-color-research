@@ -1,0 +1,45 @@
+{
+  "schema": "a7m4-bilingual-documents/1",
+  "pairs": [
+    {
+      "id": "readme",
+      "en": "README.md",
+      "zh": "README_zh.md"
+    },
+    {
+      "id": "helper-guide",
+      "en": "docs/helper-guide.md",
+      "zh": "docs/helper-guide_zh.md"
+    },
+    {
+      "id": "architecture",
+      "en": "docs/architecture.md",
+      "zh": "docs/architecture_zh.md"
+    },
+    {
+      "id": "upstream-attribution",
+      "en": "docs/upstream-attribution.md",
+      "zh": "docs/upstream-attribution_zh.md"
+    },
+    {
+      "id": "third-party-notices",
+      "en": "docs/third-party-notices.md",
+      "zh": "docs/third-party-notices_zh.md"
+    },
+    {
+      "id": "documentation",
+      "en": "docs/documentation.md",
+      "zh": "docs/documentation_zh.md"
+    }
+  ],
+  "exports": [
+    {
+      "document": "docs/architecture.md",
+      "output": "docs/architecture.mmd"
+    },
+    {
+      "document": "docs/architecture_zh.md",
+      "output": "docs/architecture_zh.mmd"
+    }
+  ]
+}

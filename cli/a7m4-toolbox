@@ -1,0 +1,39 @@
+#!/bin/sh
+# Thin launcher for the SAME driver used by the matching installed App.
+# It does not start sudo, synthesize confirmations or modify the driver.
+set -eu
+EXPECTED_VERSION='0.5.1-alpha.62'
+
+usage() {
+    cat <<'EOF'
+A7M4 CLI helpers — alpha.62
+
+Usage: ./cli/a7m4-toolbox [driver ... | local-command ...]
+       ./cli/a7m4-toolbox --help
+       ./cli/a7m4-toolbox --launcher-help
+
+Requires the matching installed App. Override its path with A7M4_APP.
+All driver arguments are forwarded unchanged. There is no automatic sudo,
+device connection, retry, acknowledgement or checkpoint advancement.
+See docs/helper-guide.md for the active GUI command chain.
+EOF
+}
+
+if [ "$#" -eq 0 ] || [ "${1:-}" = '--launcher-help' ]; then
+    usage
+    exit 0
+fi
+APP=${A7M4_APP:-'/Applications/A7M4 Research.app'}
+RESOURCES="$APP/Contents/Resources"
+PYTHON="$RESOURCES/python/bin/python3"
+RUNNER="$RESOURCES/kit/run_toolbox.py"
+if [ ! -x "$PYTHON" ] || [ ! -f "$RUNNER" ]; then
+    printf '%s\n' 'Matching App runtime not found. Install alpha.62 or set A7M4_APP to its .app path.' >&2
+    exit 2
+fi
+ACTUAL_VERSION=$("$PYTHON" -I -B "$RUNNER" --version) || exit $?
+if [ "$ACTUAL_VERSION" != "$EXPECTED_VERSION" ]; then
+    printf '%s\n' "Version mismatch: expected $EXPECTED_VERSION, found $ACTUAL_VERSION. No requested operation was started." >&2
+    exit 2
+fi
+exec "$PYTHON" -I -B "$RUNNER" "$@"

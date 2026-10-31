@@ -1,0 +1,10 @@
+#!/bin/sh
+# Export current user's retained history; do not use blanket sudo here.
+set -eu
+if [ "$#" -ne 1 ] || [ "${1:-}" = '--help' ]; then
+    printf '%s\n' 'Usage: ./cli/export-logs NEW_HISTORY.zip' 'Exports retained local history through the same driver; no camera connection.'
+    [ "${1:-}" = '--help' ] && exit 0
+    exit 2
+fi
+HERE=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd -P)
+exec "$HERE/a7m4-toolbox" driver diagnostics-export --output "$1"

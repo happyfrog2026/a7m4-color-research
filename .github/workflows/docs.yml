@@ -1,0 +1,19 @@
+name: Documentation
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  bilingual-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Check bilingual documentation and manifests
+        run: python3 tools/docs.py check

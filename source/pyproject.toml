@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools==84.1.0", "wheel==0.48.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sony-a7m4-research-kit"
+version = "0.5.1a62"
+description = "A7 IV internal toolbox with reviewed helpers, a shared CLI and local preparation"
+requires-python = ">=3.11"
+license = "LicenseRef-Internal-Study-Distribution"
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md"]
+readme = "README.md"
+dependencies = [
+  "numpy==2.3.4", "Pillow==12.0.0", "pyusb==1.3.1",
+  "pycryptodomex==3.24.1", "importlib_resources==7.1.0",
+  "libusb-package==1.0.30.0; sys_platform == 'darwin' and platform_machine == 'arm64'",
+]
+
+[project.optional-dependencies]
+icons = ["Pillow>=10"]
+test = ["pytest>=8,<10"]
+
+[project.scripts]
+a7m4-toolbox = "a7m4.toolbox.cli:main"
+a7m4-research = "a7m4.toolbox.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["a7m4", "a7m4.research*", "a7m4.toolbox*", "third_party", "third_party.pmca*"]
+namespaces = true
+
+[tool.setuptools.package-data]
+"a7m4.research" = ["data/*.json", "data/*.txt", "data/*.c", "data/assets/*.json", "data/assets/*.png", "data/assets/*.wav", "data/assets/*.cube", "helpers/**/*"]
+"a7m4.toolbox" = ["helpers/**/*", "data/**/*", "restore_helpers/source/**/*", "restore_closure/source/**/*"]
+"third_party.pmca" = ["**/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
