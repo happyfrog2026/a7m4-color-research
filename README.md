@@ -5,7 +5,9 @@ English | [简体中文](README_zh.md)
 [Telegram (recommended)](https://t.me/+gmbCDvVseX41Nzcx)
 Please check the group announcements before downloading and using the tool.
 Allow at least 20 minutes to apply changes and at least 35 minutes to restore a backup.
-The current version supports FL2/FL3/M9 filter import over USB-C and custom electronic shutter sounds.
+
+Unlock FL2/FL3/M9(custom) look over USB-C.
+Unlock custom electronic shutter sounds over USB-C
 This project is for personal study only. Commercial use is prohibited.
 Use is at your own risk; users are responsible for their actions.
 
