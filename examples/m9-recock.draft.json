@@ -1,0 +1,14 @@
+{
+  "schema": "a7m4-selected-draft/1",
+  "filters": {
+    "fl23": true,
+    "m9": true
+  },
+  "sound": {
+    "mode": "prepared",
+    "gain_db": 0,
+    "recock_enabled": true,
+    "recock_gap_ms": 40,
+    "cutoff_seconds": 0.125
+  }
+}

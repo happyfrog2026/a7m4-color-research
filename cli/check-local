@@ -1,0 +1,15 @@
+#!/bin/sh
+# Local dependencies and release source inventory only; no USB backend.
+set -eu
+if [ "$#" -ne 1 ] || [ "${1:-}" = '--help' ]; then
+    printf '%s\n' 'Usage: ./cli/check-local NEW_OUTPUT_DIRECTORY' 'Runs status, doctor and helpers --verify. Does not connect to a camera.'
+    [ "${1:-}" = '--help' ] && exit 0
+    exit 2
+fi
+HERE=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd -P)
+umask 077
+mkdir -- "$1"
+"$HERE/a7m4-toolbox" driver status > "$1/status.json"
+"$HERE/a7m4-toolbox" driver doctor > "$1/doctor.json"
+"$HERE/a7m4-toolbox" driver helpers --verify > "$1/helpers.json"
+printf '%s\n' "Local checks finished; inspect status.json, doctor.json and helpers.json in: $1" >&2

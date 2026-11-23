@@ -1,0 +1,10 @@
+#!/bin/sh
+# Verify an existing portable archive locally; do not read camera files.
+set -eu
+if [ "$#" -ne 1 ] || [ "${1:-}" = '--help' ]; then
+    printf '%s\n' 'Usage: ./cli/check-backup ORIGINAL.a7capture' 'Returns the shared driver JSON; local archive validation only.'
+    [ "${1:-}" = '--help' ] && exit 0
+    exit 2
+fi
+HERE=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd -P)
+exec "$HERE/a7m4-toolbox" driver portable-verify "$1"
