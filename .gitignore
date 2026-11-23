@@ -1,0 +1,21 @@
+# macOS metadata
+.DS_Store
+._*
+
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Temporary files
+*.log
+*.tmp
+*.swp
+*~
